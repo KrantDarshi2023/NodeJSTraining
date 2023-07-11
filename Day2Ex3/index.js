@@ -1,5 +1,6 @@
-import _ from "lodash";
 
+import _ from "lodash";
+import url from 'url'
 const companies = [
   { name: "Company One", category: "Finance", start: 1981, end: 2004 },
   { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
@@ -87,3 +88,14 @@ console.log(increament());
 console.log(increament());
 
 // Question 10
+const url1=`https://www.google.com/search?q=abstract%20api`
+const objectUrl={
+}
+const queryFromUrl=(url1)=>{
+  const myUR = url.parse(url1);
+   objectUrl.query=myUR.query;
+   return objectUrl;
+}
+console.log(queryFromUrl(url1)) ;
+
+
