@@ -45,10 +45,7 @@ console.log(
 );
 
 // Question 6
-const company = {
-  name: "company1",
-  category: "Finance",
-};
+const [company]=companies
 
 const companyDes = (company) => {
   const { name, category } = company;
