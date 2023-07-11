@@ -78,7 +78,8 @@ const addInArr = (...args) => {
 console.log(addInArr(1, 2, 3, 4, "q", "w", "", 12));
 
 // Question 9
-let num = 0;
+let num = -1;
+
 const increament = () => {
   num += 1;
   return num;
@@ -89,11 +90,11 @@ console.log(increament());
 
 // Question 10
 const url1=`https://www.google.com/search?q=abstract%20api`
-const objectUrl={
+let objectUrl={
 }
 const queryFromUrl=(url1)=>{
   const myUR = url.parse(url1);
-   objectUrl.query=myUR.query;
+   objectUrl= {...myUR};
    return objectUrl;
 }
 console.log(queryFromUrl(url1)) ;
