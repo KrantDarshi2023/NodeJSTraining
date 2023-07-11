@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1001,
+      "name": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "gender": "male",
+      "interests": ["c", "c++"]
+    },
+    {
+      "id": 1002,
+      "name": {
+        "firstName": "Rikesh",
+        "lastName": "Suthar"
+      },
+      "gender": "male",
+      "interests": ["c", "c++"]
+    },
+    {
+      "id": 1003,
+      "name": {
+        "firstName": "Nisha",
+        "lastName": "Singhal"
+      },
+      "gender": "female",
+      "interests": ["node", "react"]
+    },
+    {
+      "id": 1004,
+      "name": {
+        "firstName": "Vinay",
+        "lastName": "Gajjar"
+      },
+      "gender": "male",
+      "interests": ["c", "c++"]
+    },
+    {
+        "id": 1005,
+        "name": {
+          "firstName": "Krant",
+          "lastName": "darshi"
+        },
+        "gender": "female",
+        "interests": ["java", "JS"]
+    },
+    {
+        "id": 1006,
+        "name": {
+          "firstName": "Jethalal",
+          "lastName": "Gada"
+        },
+        "gender": "female",
+        "interests": ["c", "c++"]
+    },
+    {
+        "id": 1007,
+        "name": {
+          "firstName": "Shivam",
+          "lastName": "Yadav"
+        },
+        "gender": "male",
+        "interests": ["padhai", "and padhai"]
+      },
+      {
+        "id": 1008,
+        "name": {
+          "firstName": "Gaurav",
+          "lastName": "Pandey"
+        },
+        "gender": "male",
+        "interests": ["memes", "fifa"]
+      },
+      {
+        "id": 1009,
+        "name": {
+          "firstName": "Shardul",
+          "lastName": "Gautam"
+        },
+        "gender": "male",
+        "interests": ["gym", "protein"]
+      },
+      {
+          "id": 1010,
+          "name": {
+            "firstName": "kalkesh",
+            "lastName": "chittimali"
+          },
+          "gender": "male",
+          "interests": ["Hindi", "nahi Aati"]
+      },
+      {
+          "id": 1011,
+          "name": {
+            "firstName": "jairaj",
+            "lastName": "Upadhyay"
+          },
+          "gender": "male",
+          "interests": ["pta", "nahi"]
+      }
+
+  ]
