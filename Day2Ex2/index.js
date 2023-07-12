@@ -18,10 +18,10 @@ const checkGender=(user,gender)=>{
      }
     }
 }
-checkGender(user,"gender")
-checkGender(user,"interests")
-checkGender(user)
-checkGender()
+checkProperties(user,"gender")
+checkProperties(user,"interests")
+checkProperties(user)
+checkProperties()
 
 
 
