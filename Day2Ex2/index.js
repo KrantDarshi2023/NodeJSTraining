@@ -4,7 +4,7 @@ const user={
     name:"Raj",
     gender:'male'
 }
-const checkGender=(user,gender)=>{
+const checkProperties=(user,gender)=>{
     if(!user){
         console.log("Please enter the object and property to check")
     }
