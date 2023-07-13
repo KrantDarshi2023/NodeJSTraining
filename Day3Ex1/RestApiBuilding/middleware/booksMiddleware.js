@@ -1,13 +1,12 @@
-import express from 'express'
+import express from "express";
+import booksErrorSchema from "../ErrorSchema/BooksErrorSchema.js";
 
-const bookPostMiddleware=(req,res,next)=>{
-    const {author,title}=req.body;
-     if(!author || !title){
-        res.send("Author or Title not specified")
-}else{
-    res.send(req.body)
+const bookPostMiddleware = (req, res, next) => {
+  const { error } = booksErrorSchema.validate(req.body) ;
+   if(!error){
     next()
-}
-     
-}
+   }else{
+    return error.message
+   }
+};
 export default bookPostMiddleware;

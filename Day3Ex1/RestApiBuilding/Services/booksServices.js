@@ -9,7 +9,7 @@ const getAllBooks = async () => {
     );
     return JSON.parse(books);
   } catch (e) {
-    return createHttpError(500, e.message);
+    return e.message;
   }
 };
 const getBooksByAuthor = async (author) => {
@@ -20,7 +20,7 @@ const getBooksByAuthor = async (author) => {
     });
     return booksByAuthor;
   } catch (e) {
-    return createHttpError(500, e.message);
+    return e.message;
   }
 };
 const deleteBooksByAuthor = async (author) => {
@@ -33,7 +33,7 @@ const deleteBooksByAuthor = async (author) => {
     });
     return booksToBeDeleted;
   } catch (e) {
-    return createHttpError(500, e.message);
+    return e.message;
   }
 };
 const addBooks = async (data) => {
@@ -42,7 +42,7 @@ const addBooks = async (data) => {
     let updatedBooks = books.push(data);
     return updatedBooks;
   } catch (e) {
-    return createHttpError(500, e.message);
+    return e.message;
   }
 };
 export { getAllBooks, getBooksByAuthor, deleteBooksByAuthor, addBooks };
