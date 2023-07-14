@@ -3,7 +3,8 @@ import {
   getBooksByAuthor,
   deleteBooksByAuthor,
   addBooks,
-  getBooksById
+  getBooksById,
+  deleteBooksById
 } from "../Services/booksServices.js";
 
 const getAllBooksController = async (req, res) => {
@@ -29,6 +30,15 @@ const deleteBooksByAuthorController = async (req, res) => {
     res.send(`${deleteBooksByAuthor} Books Deleted`);
   }
 };
+const deleteBookByIdController=async(req,res)=>{
+  const idOfBooks=req.params.id;
+  const deletedBooks=await deleteBooksById(idOfBooks);
+  if (res.statusCode !== 200) {
+    res.send("Books can't be Deleted");
+  } else {
+    res.send(`${deleteBooksById} Books Deleted`);
+  }
+}
 const addBooksController = async (req, res) => {
   const data = req.body;
   const updatedBooks = await addBooks(data);
@@ -39,5 +49,6 @@ export {
   getAllBooksByIdController,
   deleteBooksByAuthorController,
   addBooksController,
-  getAllBooksByAuthorController
+  getAllBooksByAuthorController,
+  deleteBookByIdController
 };
