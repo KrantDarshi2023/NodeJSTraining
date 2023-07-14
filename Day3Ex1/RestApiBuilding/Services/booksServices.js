@@ -35,6 +35,15 @@ const deleteBooksByAuthor = async (author) => {
     return e.message;
   }
 };
+const deleteBooksById = async (id) => {
+  try {
+    let booksToBeDeleted = await BooksModel.deleteOne({_id:id})
+    const deletedCount = booksToBeDeleted
+    return deletedCount;
+  } catch (e) {
+    return e.message;
+  }
+};
 const addBooks = async (data) => {
   try {
      let addedBooks=BooksModel.create(data)
@@ -43,4 +52,4 @@ const addBooks = async (data) => {
     return e.message;
   }
 };
-export { getAllBooks, getBooksByAuthor, deleteBooksByAuthor, addBooks,getBooksById };
+export { getAllBooks, getBooksByAuthor, deleteBooksByAuthor, addBooks,getBooksById, deleteBooksById};
