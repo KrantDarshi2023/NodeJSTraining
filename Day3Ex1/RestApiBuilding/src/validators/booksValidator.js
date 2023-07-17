@@ -1,6 +1,6 @@
 import joi from "joi";
 
-const booksErrorSchema = joi.object({
+const booksValidator = joi.object({
   author: joi.string().required(),
   title: joi.string().required(),
   country: joi.string(),
@@ -10,4 +10,4 @@ const booksErrorSchema = joi.object({
   pages: joi.number(),
   year: joi.number(),
 });
-export default booksErrorSchema;
+export default booksValidator;

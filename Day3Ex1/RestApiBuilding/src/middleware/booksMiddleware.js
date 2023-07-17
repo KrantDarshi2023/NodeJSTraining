@@ -1,8 +1,8 @@
 import express from "express";
-import booksErrorSchema from "../ErrorSchema/BooksErrorSchema.js";
+import booksValidator from "../validators/booksValidator.js";
 
 const bookPostMiddleware = (req, res, next) => {
-  const { error } = booksErrorSchema.validate(req.body) ;
+  const { error } = booksValidator.validate(req.body) ;
    if(!error){
     next()
    }else{
